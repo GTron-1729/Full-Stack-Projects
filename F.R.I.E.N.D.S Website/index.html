@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> High Five </title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'East Sea Dokdo', cursive;
+        background: url('Images/img5.jpg');
+        background-size: cover;
+        height: 1000px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        color: aliceblue;
+        position: absolute;
+        left: 34px;
+        top: 15px;
+    }
+
+    .left img {
+        width: 200px;
+        margin-top: 8px;
+    }
+
+    .left img:hover {}
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 15px auto;
+        /* border: 2px solid yellow; */
+        color: aliceblue;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        /* border: 2px solid aqua; */
+        color: aliceblue;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 34px;
+        margin-left: 70px;
+        font-size: 30px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: rgb(92, 92, 92);
+    }
+
+    .btn {
+        background: transparent;
+        color: aliceblue;
+        border-radius: 10px;
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 20px;
+        border: 2px solid grey;
+        margin: 10px 5px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(219, 149, 18)
+    }
+
+    .container {
+        color: white;
+        margin-top: 200px;
+        /* border: 2px solid white; */
+        width: 400px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        font-size: 30px;
+    }
+
+    .form_group input{
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 7px;
+
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+    .container h1{
+        font-size: 40px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+
+        <!-- left for logo -->
+        <div class="left">
+            <img src="Images/img6.png" alt="">
+        </div>
+
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Contact us </a> </li>
+            </ul>
+        </div>
+
+        <!-- right of buttons -->
+        <div class="right">
+            <button class="btn"> Call us Now</button>
+            <button class="btn"> Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> The best Friend Circle </h1>
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" id="" placeholder="Enter Your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" id="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" id="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn" id="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
