@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div.text Welcome to Tero Dance Academy
+        div.subtext  Dance Dil se! 🤙  
+    section#missionSection
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+                div.card-content
+                    p This is the best Dance Academy in the Universe Believe it
+        div.card 
+            h3 Danse Dil Se!
+            div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p This academy is founded by Mr. Ganesh Tarone who is the best dancer
+        div.card 
+            h3 Be a Pro
+            div.card-box
+                div.card-img
+                    img(src="/static/3.png")
+                div.card-content
+                    p Dance over here is taught by some of very best professionals in the Industry.
+    section#SponsersSection
+        h2 Our Sponsers
+        div#sponsers
+            div#img-name
+                p Soham Bhure
+                img(src='/static/soh.png' , alt = 'Sponser Image' , class = 'spImage')
+            div#img-name
+                p Tanya Agrawal
+                img(src='/static/tan.png' , alt = 'Sponser Image' , class = 'spImage')
+            div#img-name
+                p &nbsp Rutuja Walke
+                img(src='/static/rut.png' , alt = 'Sponser Image' , class = 'spImage')
